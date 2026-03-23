@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#a855f7" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="TicTacMind AI" />
+
+    <!-- Primary SEO -->
+    <title>TicTacMind AI — Unbeatable Tic-Tac-Toe powered by Minimax</title>
+    <meta name="description" content="Play Tic-Tac-Toe against an unbeatable AI powered by the Minimax algorithm. Can you beat it? Built by anointedthedeveloper." />
+    <meta name="keywords" content="tic tac toe, AI game, minimax algorithm, unbeatable AI, browser game, anointedthedeveloper" />
+    <meta name="author" content="anointedthedeveloper" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://tictacmindai.netlify.app/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="TicTacMind AI — Unbeatable Tic-Tac-Toe" />
+    <meta property="og:description" content="Play Tic-Tac-Toe against an unbeatable AI powered by the Minimax algorithm. Built by anointedthedeveloper." />
+    <meta property="og:url" content="https://tictacmindai.netlify.app/" />
+    <meta property="og:image" content="https://tictacmindai.netlify.app/favicon.svg" />
+    <meta property="og:site_name" content="TicTacMind AI" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="TicTacMind AI — Unbeatable Tic-Tac-Toe" />
+    <meta name="twitter:description" content="Play Tic-Tac-Toe against an unbeatable AI powered by the Minimax algorithm." />
+    <meta name="twitter:image" content="https://tictacmindai.netlify.app/favicon.svg" />
+    <meta name="twitter:creator" content="@anointedthedeveloper" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "TicTacMind AI",
+      "description": "Unbeatable Tic-Tac-Toe AI powered by the Minimax algorithm",
+      "url": "https://tictacmindai.netlify.app/",
+      "author": { "@type": "Person", "name": "anointedthedeveloper" },
+      "applicationCategory": "GameApplication",
+      "operatingSystem": "Any",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => navigator.serviceWorker.register("/sw.js"));
+      }
+    </script>
+  </body>
+</html>

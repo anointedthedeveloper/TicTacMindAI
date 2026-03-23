@@ -1,0 +1,13 @@
+{
+  "name": "TicTacMind AI",
+  "short_name": "TicTacMind",
+  "description": "Unbeatable Tic-Tac-Toe AI powered by the Minimax algorithm. Built by anointedthedeveloper.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0d1117",
+  "theme_color": "#a855f7",
+  "orientation": "portrait",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

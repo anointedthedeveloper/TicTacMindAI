@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" rx="20" fill="#0d1117"/>
+  <defs>
+    <filter id="glowX">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowO">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- O circle -->
+  <circle cx="54" cy="52" r="26" fill="none" stroke="#22d3ee" stroke-width="8" filter="url(#glowO)" opacity="0.9"/>
+  <!-- X lines -->
+  <line x1="22" y1="22" x2="58" y2="58" stroke="#a855f7" stroke-width="9" stroke-linecap="round" filter="url(#glowX)"/>
+  <line x1="58" y1="22" x2="22" y2="58" stroke="#a855f7" stroke-width="9" stroke-linecap="round" filter="url(#glowX)"/>
+</svg>
